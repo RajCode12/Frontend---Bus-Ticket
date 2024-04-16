@@ -1,0 +1,58 @@
+/* General Styles */
+body, html {
+  font-family: Arial, sans-serif; /* Modern font */
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4; /* Light grey background */
+}
+
+.container {
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: center; /* Centering the card */
+  padding: 20px 0; /* Padding around the container */
+}
+
+.card {
+  background: white; /* White background for the card */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  width: 100%; /* Card width */
+  max-width: 100%; /* Maximum width */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  background: #007BFF; /* Bright blue background */
+  color: white;
+  padding: 10px; /* Padding inside the navbar */
+}
+
+.nav-links {
+  list-style-type: none; /* Removes default list styling */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around; /* Evenly space out the links */
+}
+
+.nav-item {
+  padding: 10px; /* Padding around each nav item */
+}
+
+.nav-link {
+  color: white; /* White text color */
+  text-decoration: none; /* Removes underline from links */
+  font-size: 16px; /* Sets font size */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.nav-link:hover, .nav-link.router-link-active {
+  color: #FFD700; /* Gold color on hover and for active links */
+  text-decoration: underline; /* Underline on hover */
+}
+
+.container2{
+  margin-top: 50px;
+}

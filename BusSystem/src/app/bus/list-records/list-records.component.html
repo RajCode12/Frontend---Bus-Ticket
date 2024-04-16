@@ -1,0 +1,40 @@
+<!-- <table class="custom-table">
+    <thead>
+        <tr>
+            <th>PNR</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Date</th>
+            <th>Select</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let r of records">
+            <td>{{r.pnr}}</td>
+            <td>{{r.source}}</td>
+            <td>{{r.destination}}</td>
+            <td>{{r.date}}</td>
+            <td><button class="box" (click)="onClick(r.id)">Show</button></td>
+        </tr>
+    </tbody>
+</table> -->
+<table class="custom-table">
+    <thead>
+        <tr>
+            <th>PNR</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Date</th>
+            <th>Select</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let r of records">
+            <td>{{r.pnr}}</td>
+            <td>{{r.source}}</td>
+            <td>{{r.destination}}</td>
+            <td>{{r.date}}</td>
+            <td><button class="box" (click)="onClick(r.id,r.pnr)">Show</button></td>
+        </tr>
+    </tbody>
+</table>

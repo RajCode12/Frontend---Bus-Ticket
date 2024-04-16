@@ -1,0 +1,56 @@
+/* .custom-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+ 
+.custom-table th, .custom-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    width: 20%;
+} */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+ 
+.custom-table th,
+.custom-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+ 
+.custom-table th {
+    background-color: #f5f5f5;
+}
+ 
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+ 
+.box {
+    display: block;
+    width: 80px;
+    height: 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+.box:hover {
+    background-color: #0056b3;
+}
+ 
+/* Example: Adding icons */
+td img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}

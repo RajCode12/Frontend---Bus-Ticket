@@ -1,0 +1,13 @@
+<div class="bus-container">
+    <div class="bus-box" *ngFor="let buss of buses">
+        <div class="bus-details">
+            <h3>{{ buss.busName }}</h3>
+            <p>Bus Number: {{ buss.busNumber }}</p>
+            <p>Bus Type : {{ buss.type }}</p>
+            <p>Source: {{ bus.source }}</p>
+            <p>Destination: {{ bus.destination }}</p>
+            <p><button class="continue-button" (click)="onClick(buss)">Continue</button></p>
+        </div>
+    </div>
+</div>
+

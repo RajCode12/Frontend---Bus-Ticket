@@ -1,0 +1,75 @@
+<!-- <table class="custom-table">
+    <thead>
+        <tr>
+            <th>PNR</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Date</th>
+            <th>Departure Time</th>
+            <th>Reporting Time</th>
+        </tr>
+    </thead>
+    <tbody>
+            <td>{{bus.pnr}}</td>
+            <td>{{bus.source}}</td>
+            <td>{{bus.destination}}</td>
+            <td>{{bus.date}}</td>
+            <td>{{bus.departure}}</td>
+            <td>{{bus.reporting}}</td>
+    </tbody>
+</table>
+<div>
+    <div *ngFor="let p of passengers; let i = index">
+        <h2>Passenger Details : {{i+1}}</h2>    
+        <label>Passenger Name</label>
+        <div><input type="text" [(ngModel)]="p.name" placeholder="Enter Your Name"></div>
+
+        <label>Age</label>
+        <div><input type="number" [(ngModel)]="p.age" placeholder="Enter Your Age"></div>
+    </div>
+    <button class="box3" (click)="addCount()">Add Passenger</button>
+    <button class="box4" (click)="deleteCount()">Delete</button>
+</div>
+<div>
+    <button class="box2" (click)="onBack()">Back</button>
+    <button class="box" (click)="onSubmit()">Make Payment</button>
+</div> -->
+<table class="custom-table">
+    <thead>
+        <tr>
+            <th>PNR</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Date</th>
+            <th>Departure Time</th>
+            <th>Reporting Time</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{bus.pnr}}</td>
+            <td>{{bus.source}}</td>
+            <td>{{bus.destination}}</td>
+            <td>{{bus.date}}</td>
+            <td>{{bus.departure}}</td>
+            <td>{{bus.reporting}}</td>
+        </tr>
+    </tbody>
+</table>
+<div class="passenger-details">
+    <div *ngFor="let p of passengers; let i = index">
+        <h2>Passenger Details: {{i+1}}</h2>    
+        <label>Passenger Name</label>
+        <div><input type="text" [(ngModel)]="p.name" placeholder="Enter Your Name" class="input-field"></div>
+
+        <label>Age</label>
+        <div><input type="number" [(ngModel)]="p.age" placeholder="Enter Your Age" class="input-field"></div>
+    </div>
+    <button class="button add-btn" (click)="addCount()">Add Passenger</button>
+    <button class="button delete-btn" (click)="deleteCount()">Delete</button>
+</div>
+<div class="action-buttons">
+    <button class="button back-btn" (click)="onBack()">Back</button>
+    <button class="button submit-btn" (click)="onSubmit()">Make Payment</button>
+</div>
+

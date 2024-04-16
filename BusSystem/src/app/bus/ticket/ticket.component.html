@@ -1,0 +1,90 @@
+<!-- <div  class="container">
+    <u><h2 class="heading">Electronic Reservation Slip(ERS)</h2></u>
+    <div style="text-align: center; padding-bottom: 10px;">
+        <img src="../assets/bus-img.png" style="width: auto; height: 100px;">
+    </div>
+</div>
+<div>
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th>PNR No</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+                <td>{{bus.pnr}}</td>
+                <td>{{bus.source}}</td>
+                <td>{{bus.destination}}</td>
+                <td>{{bus.date}}</td>
+        </tbody>
+    </table>
+</div>
+<div>
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th>Passenger Name</th>
+                <th>Passenger Age</th>
+                <th>Seat Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of passengers">
+                <td>{{p.name}}</td>
+                <td>{{p.age}}</td>
+                <td>{{p.seat}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+<div class="container">
+    <div class="header">
+        <h2 class="heading">Electronic Reservation Slip (ERS)</h2>
+        <div class="bus-image">
+            <img src="../assets/bus-img.png" alt="Bus Image" style="width: auto; height: 100px;">
+        </div>
+    </div>
+
+    <div class="reservation-details">
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>PNR No</th>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{bus.pnr}}</td>
+                    <td>{{bus.source}}</td>
+                    <td>{{bus.destination}}</td>
+                    <td>{{bus.date}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="passenger-details">
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>Passenger Name</th>
+                    <th>Passenger Age</th>
+                    <th>Seat Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let p of passengers">
+                    <td>{{p.name}}</td>
+                    <td>{{p.age}}</td>
+                    <td>{{p.seat}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
